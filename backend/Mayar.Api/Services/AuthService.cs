@@ -1,0 +1,181 @@
+using Mayar.Api.Data;
+using Mayar.Api.DTOs;
+using Mayar.Api.Entities;
+using Mayar.Api.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace Mayar.Api.Services
+{
+    public class AuthService(
+        AppDbContext context,
+        IConfiguration configuration,
+        ILogger<AuthService> logger) : IAuthService
+    {
+        public async Task<UserResponseDto?> RegisterAsync(UserRegisterDto request)
+        {
+            if (await context.Users.AnyAsync(u => u.Email == request.Email))
+            {
+                return null;
+            }
+
+            var user = new User
+            {
+                Name = request.Name,
+                Email = request.Email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
+                PhoneNumber = request.PhoneNumber,
+                Address = request.Address,
+                Country = request.Country,
+                PinCode = request.PinCode
+            };
+
+            context.Users.Add(user);
+            await context.SaveChangesAsync();
+
+            logger.LogInformation("User registered: {UserId}", user.Id);
+
+            return new UserResponseDto
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Role = user.Role,
+                PhoneNumber = user.PhoneNumber,
+                Address = user.Address,
+                Country = user.Country,
+                PinCode = user.PinCode,
+            };
+        }
+
+        public async Task<TokenResponseDto?> LoginAsync(string email, string password)
+        {
+            var user = await context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user is null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
+            {
+                return null;
+            }
+
+            logger.LogInformation("User logged in: {UserId}", user.Id);
+            return await CreateTokenResponse(user);
+        }
+
+        public async Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto request)
+        {
+            var user = await ValidateRefreshTokenAsync(request.UserId, request.RefreshToken);
+            if (user is null)
+            {
+                return null;
+            }
+            return await CreateTokenResponse(user);
+        }
+
+        public async Task<bool> RevokeRefreshTokenAsync(Guid userId, string refreshToken)
+        {
+            var user = await context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user is null || !CryptographicOperations.FixedTimeEquals(
+                Encoding.UTF8.GetBytes(user.RefreshToken ?? ""),
+                Encoding.UTF8.GetBytes(refreshToken)))
+            {
+                return false;
+            }
+            user.RefreshToken = null;
+            user.RefreshTokenExpiryTime = null;
+            await context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<UserResponseDto?> GetUserByIdAsync(Guid userId)
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user is null)
+                return null;
+
+            return new UserResponseDto
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Role = user.Role,
+                PhoneNumber = user.PhoneNumber,
+                Address = user.Address,
+                Country = user.Country,
+                PinCode = user.PinCode,
+            };
+        }
+
+        private async Task<TokenResponseDto> CreateTokenResponse(User user)
+        {
+            return new TokenResponseDto
+            {
+                UserId = user.Id,
+                AccessToken = CreateToken(user),
+                RefreshToken = await GenerateAndSaveRefreshTokenAsync(user)
+            };
+        }
+
+        private string CreateToken(User user)
+        {
+            var claims = new List<Claim>
+            {
+                new(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                new(ClaimTypes.Name, user.Name),
+                new(ClaimTypes.Email, user.Email),
+                new(ClaimTypes.Role, user.Role)
+            };
+
+            if (!string.IsNullOrEmpty(user.PhoneNumber))
+                claims.Add(new Claim(ClaimTypes.MobilePhone, user.PhoneNumber));
+
+            var key = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(configuration.GetValue<string>("AppSettings:Token")!));
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+
+            var tokenDescriptor = new JwtSecurityToken(
+                issuer: configuration.GetValue<string>("AppSettings:Issuer"),
+                audience: configuration.GetValue<string>("AppSettings:Audience"),
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(15),
+                signingCredentials: creds
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
+        }
+
+        private string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[32];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
+        }
+
+        private async Task<string> GenerateAndSaveRefreshTokenAsync(User user)
+        {
+            var refreshToken = GenerateRefreshToken();
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await context.SaveChangesAsync();
+            return refreshToken;
+        }
+
+        private async Task<User?> ValidateRefreshTokenAsync(Guid userId, string refreshToken)
+        {
+            var user = await context.Users.FindAsync(userId);
+            if (user is null
+                || !CryptographicOperations.FixedTimeEquals(
+                    Encoding.UTF8.GetBytes(user.RefreshToken ?? ""),
+                    Encoding.UTF8.GetBytes(refreshToken))
+                || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+            {
+                return null;
+            }
+            return user;
+        }
+    }
+}

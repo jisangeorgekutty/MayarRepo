@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\MayarRepo\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\mayar.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\mayar.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\dtos\\logoutrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\dtos\\logoutrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\dtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\dtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|d:\\projects\\mayarrepo\\backend\\mayar.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D03E91-2D25-404A-9DD7-3F7DF9345A30}|Mayar.Api\\Mayar.Api.csproj|solutionrelative:mayar.api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Mayar.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwCsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T15:38:29.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Mayar.Api\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T15:33:12.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Program.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Program.cs",
+              "RelativeToolTip": "Mayar.Api\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAGMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:49:56.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Mayar.Api\\appsettings.json",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\appsettings.json",
+              "RelativeToolTip": "Mayar.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-15T12:52:38.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Services\\AuthService.cs",
+              "RelativeToolTip": "Mayar.Api\\Services\\AuthService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwB8AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T15:33:52.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenResponseDto.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\TokenResponseDto.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\DTOs\\TokenResponseDto.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\TokenResponseDto.cs",
+              "RelativeToolTip": "Mayar.Api\\DTOs\\TokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T19:15:16.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mayar.Api.csproj",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Mayar.Api.csproj",
+              "RelativeDocumentMoniker": "Mayar.Api\\Mayar.Api.csproj",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Mayar.Api.csproj",
+              "RelativeToolTip": "Mayar.Api\\Mayar.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-15T12:37:41.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LogoutRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\LogoutRequestDto.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\DTOs\\LogoutRequestDto.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\LogoutRequestDto.cs",
+              "RelativeToolTip": "Mayar.Api\\DTOs\\LogoutRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T19:24:19.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\DTOs\\RefreshTokenRequestDto.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "Mayar.Api\\DTOs\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T19:14:54.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRegisterDto.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\UserRegisterDto.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\DTOs\\UserRegisterDto.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\DTOs\\UserRegisterDto.cs",
+              "RelativeToolTip": "Mayar.Api\\DTOs\\UserRegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T19:14:09.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Mayar.Api\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:44:20.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Mayar.Api\\Entities\\User.cs",
+              "ToolTip": "D:\\Projects\\MayarRepo\\backend\\Mayar.Api\\Entities\\User.cs",
+              "RelativeToolTip": "Mayar.Api\\Entities\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:45:46.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
